@@ -41,6 +41,32 @@ ng new name_of_the_project
 ng serve --host $IP --port $PORT
 http://angular4-luiseufrasio.c9users.io:8080/
 
-# generating a component called Header
+# generating components, directives, pipes, services, classes, interfaces, enums
 ng generate component Header
-ng g component Header (abbreviate alternative)
+ng g directive My
+ng g pipe My
+ng g service My
+ng g class MyClass
+ng g interface MyInterface
+ng g enum MyEnum
+
+# building the project [dev]
+ng build
+
+# starting python server in dist folder
+python -m SimpleHTTPServer $PORT
+
+# building the project [prod]
+ng build --prod
+
+# installing a third party library and saving in package.json 
+npm install moment --save
+
+# installing the typescript type definition file
+npm install @types/moment --save
+
+# installing bootstrap file globally
+npm install bootstrap@4.0.0-alpha.5
+
+# running all unit tests
+ng test

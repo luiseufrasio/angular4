@@ -4,20 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LoginButtonComponent } from './header/login-button/login-button.component';
-import { BarFooComponent } from './header/login-button/bar-foo/bar-foo.component';
-import { MyDirective } from './my.directive';
-import { MyPipe } from './my.pipe';
+import { JokeComponent } from './joke/joke.component';
+import { JokeFormComponent } from './joke-form/joke-form.component';
+import { JokeListComponent } from './joke-list/joke-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LoginButtonComponent,
-    BarFooComponent,
-    MyDirective,
-    MyPipe
+    JokeComponent,
+    JokeFormComponent,
+    JokeListComponent
   ],
   imports: [
     BrowserModule,
